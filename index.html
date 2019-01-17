@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flower App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image" href="images/imag.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body onload="getData()">
+    <nav class="navbar navbar-light bg-light brand-navbar">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" height="50" class="d-inline-block align-top" alt="">
+            <span>Tech</span>&nbsp;<span>Karo</span>
+        </a>
+        <form class="form-inline my-2 my-lg-0 flags">
+           <img src="images/en-flag.png" onclick="getData('en')">
+           <img src="images/ur-flag.png" onclick="getData('ur')">
+           <img src="images/zh-flag.png" onclick="getData('zh')">
+        </form>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="container">
+        <h1>A Flower A Day...</h1>
+        <button class="btn btn-success what-new">
+            <i>What's new at TechKaro?</i>
+        </button>
+        <div class="columns">
+            <section>
+                <div class="imagee"></div>
+                <div class="card">
+                    <div class="card-header separator">
+                        <div class="group">
+                            <i class="fa fa-calendar-alt icon"></i>
+                            <span id="date"></span>
+                        </div>
+                        <div class="group">
+                            <i class="fa fa-user icon"></i>
+                            <span>by <span class="green">TechKaro Community</span></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="info-heading"></h5>
+                        <p class="card-text" id="info-desc"></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <button class="btn btn-success what-new"><strong>New to TechKaro?</strong> <i>Learn More</i> &gt;</button>
+                <div class="card aside-right">
+                    <div class="card-body">
+                        <h5 class="card-title" id="sale-heading"></h5>
+                        <p class="card-text dummy" id="sale-desc"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+</body>
+</html>

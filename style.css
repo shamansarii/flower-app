@@ -1,0 +1,123 @@
+body, body * {
+    font-family: 'Montserrat', sans-serif;
+    color: #494949;
+}
+
+body {
+    background-color: #40a63d1a;
+}
+
+.brand-navbar .navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.brand-navbar .navbar-brand span {
+    color: #DE0336;
+}
+
+.brand-navbar .navbar-brand span::first-letter {
+    font-size: 1.5em;
+}
+
+.main-navbar .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.flags img{
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.main-navbar .navbar-collapse li {
+    padding-right: 1em;
+}
+
+.main-navbar {
+    background-color: #494949 !important;
+}
+
+.main-navbar a {
+    color: #b2b2b2 !important;
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.what-new {
+    font-size: 14px;
+}
+
+.what-new, .what-new * {
+    color: white !important;
+}
+
+.imagee {
+    height: 300px;
+    min-width: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+}
+
+.separator  {
+    display: flex;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    padding: 10px 1em;
+}
+
+.separator * {
+    margin: 0;
+}
+
+.separator .group {
+    margin-right: 1em;
+}
+
+.separator .group .green {
+    color: #5bbc2e;
+}
+
+.separator .group .icon {
+    color: #5ea32b;
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columns section:first-child {
+    margin-right: 1em;
+    flex: 2;
+}
+
+.columns section:nth-child(2) {
+    flex: 1;
+}
+
+button {
+    border-radius: 2px !important;
+}
+
+.aside-right {
+    background-color: #F9F9F9;
+}
+
+@media (max-width: 767px) {
+    .columns section:nth-child(2) {
+        margin-top: 1em;
+    }
+    
+}
