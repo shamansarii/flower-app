@@ -1,7 +1,6 @@
 FLOWER APP
 ----------
-You can see website here: https://shamansarii.github.io/send-msg-app/
-
+You can see website here: https://shamansarii.github.io/flower-app/
 ### APP FEATURES
 
 1. The app fetches data from the API https://techkaro-test.herokuapp.com/api/v1/getdata and displays the data on the html page.
